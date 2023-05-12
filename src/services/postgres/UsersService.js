@@ -24,7 +24,7 @@ class UsersService {
     }
 
     async addUser({email, phone, password, name, address, kelurahan, kecamatan, city, province, postal_code, birthdate, gender}) {
-        await this._pool.verifyNewEmail(email);
+        // await this._pool.verifyNewEmail(email);
 
         const id = `user-${nanoid(16)}`;
         const hashedPassword = await bcrypt.hash(password, 10);

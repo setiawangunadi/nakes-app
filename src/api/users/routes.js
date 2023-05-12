@@ -3,9 +3,9 @@ const routes = (handler) => [
         method: 'POST',
         path: '/register',
         handler: handler.postUserHandler,
-        options: {
-            auth: 'nakesapp_jwt',
-        },
+        // options: {
+        //     auth: 'nakesapp_jwt',
+        // },
     },
     {
         method: 'GET',

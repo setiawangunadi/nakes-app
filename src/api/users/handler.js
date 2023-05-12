@@ -1,5 +1,3 @@
-const { nanoid } = require("nanoid");
-const users = require('./users');
 const ClientError = require("../../exceptions/ClientError");
 
 class UsersHandler {
